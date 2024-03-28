@@ -1,0 +1,36 @@
+:root {
+    /* font-size */
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-mmd: 24px;
+    --fs-lg: 36px;
+    --fs-llg: 48px;
+    --fs-xl: 64px;
+    --fs-xxl: 144px;
+
+    /* font-color */
+    --fc-white: #ffffff;
+    --fc-black: #000000;
+    --fc-gray: #4d4d4d;
+    --fc-light-gray: #eeeeee;
+    --fc-primary-gray: #f0f0f0;
+    --fc-secondary-gray: #444444;
+    --fc-green: #d2da60;
+    --fc-purple: #9003e5;
+    --fc-primary-purple: #8a3e74;
+    --fc-blue: #010080;
+}
+
+@media(min-width:576px) {
+    .choose {
+        --fs-lg: 48px;
+    }
+
+    .heading1 {
+        --fs-mmd: 36px;
+    }
+}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {}
