@@ -145,6 +145,7 @@
     font-size: var(--fs-lg);
     font-weight: 700;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .py115 {
@@ -152,11 +153,32 @@
     padding-bottom: 115px;
 }
 
-.circle {
+.pb42 {
+    padding-bottom: 42px;
+}
+
+.circle1 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: linear-gradient(90deg, #F9AF0A 0%, #92AA61 85%);
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #F9AF0A 0%, #92AA61 85%);
+}
+
+.circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #1798BC 0%, #0185D3 90%);
+}
+
+.circle3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #7142A2 0%, #B31376 100%);
 }
 
 .finishes {
