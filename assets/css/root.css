@@ -1,5 +1,7 @@
 :root {
     /* font-size */
+    --fs-xxsm: 12px;
+    --fs-xsm: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
     --fs-mmd: 24px;
@@ -12,22 +14,45 @@
     --fc-white: #ffffff;
     --fc-black: #000000;
     --fc-gray: #4d4d4d;
+    --fc-regular-gray: #dcdcdc;
     --fc-light-gray: #eeeeee;
     --fc-primary-gray: #f0f0f0;
     --fc-secondary-gray: #444444;
     --fc-green: #d2da60;
+    --fc-pink: #F93B95;
     --fc-purple: #9003e5;
     --fc-primary-purple: #8a3e74;
+    --fc-secondary-purple: #9104E5;
     --fc-blue: #010080;
 }
 
 @media(min-width:576px) {
+    .digital {
+        --fs-xxsm: 18px;
+    }
+
+    .deconstrution {
+        --fs-mmd: 36px;
+    }
+
     .choose {
         --fs-lg: 48px;
     }
 
     .heading1 {
         --fs-mmd: 36px;
+    }
+
+    .para {
+        --fs-xsm: 18px;
+    }
+
+    .member {
+        --fs-xsm: 18px;
+    }
+
+    .welcome {
+        --fs-lg: 48px;
     }
 }
 
