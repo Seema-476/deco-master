@@ -19,11 +19,11 @@
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-sm);
     font-weight: 400;
-    transition: 300ms linear;
+    transition: 200ms linear;
 }
 
 .home:hover {
-    font-weight: 600;
+    text-shadow: 0 0 .65px var(--fc-purple), 0 0 .65px var(--fc-purple);
 }
 
 @media(max-width:992px) {
@@ -330,7 +330,8 @@
 /* ================================our process==================================== */
 .backimage {
     position: absolute;
-    top: 76%;
+    top: 40%;
+    left: -5px;
     z-index: -1;
 }
 
@@ -347,11 +348,19 @@
     bottom: -90%;
 }
 
+.max-w-1880 {
+    max-width: 1880px;
+}
+
+.p100 {
+    padding-top: 100px;
+}
+
 /* ================================our services==================================== */
 .number {
     color: var(--fc-blue);
     font-family: 'Poppins', sans-serif;
-    font-size: 64px;
+    font-size: var(--fs-lg);
     font-weight: 700;
     white-space: nowrap;
 }
@@ -359,16 +368,16 @@
 .Residential {
     color: var(--fc-black);
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: var(--fs-mmd);
     font-weight: 500;
-    line-height: 72px;
+    line-height: 45px;
     padding-bottom: 8px;
 }
 
 .Residentialtext {
     color: var(--fc-black);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-xsm);
     font-weight: 400;
     padding-bottom: 24px;
 }
@@ -380,21 +389,24 @@
     font-weight: 400;
     border: none;
     background: var(--fc-blue);
-    padding: 11px 34px;
+    padding: 8px 24px;
     border-radius: 4px;
 }
 
 .residentialbg {
     max-width: 1774px;
-    min-height: 365px;
     background: var(--fc-light-gray);
     border-radius: 40px;
-    padding: 54px 136px;
-    position: absolute;
-    right: 0;
-    left: 10%;
-    top: 170px;
-    z-index: -1;
+    padding: 35px 40px 35px 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.residenceimage {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+
 }
 
 /* ==============================================Testimonials========================================== */
@@ -538,9 +550,24 @@
     padding-bottom: 26px;
 }
 
+.margintop {
+    margin-top: 200px;
+}
 
 
 @media(min-width:576px) {
+    .residenceimage {
+        border-radius: 40px;
+    }
+
+    .btnreadmore {
+        padding: 11px 34px;
+    }
+
+    .Residential {
+        line-height: 72px;
+    }
+
     .py115 {
         padding-top: 115px;
         padding-bottom: 115px;
@@ -588,12 +615,25 @@
     }
 }
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    .residenceimage {
+        border-radius: 48px;
+    }
+
+    .residentialbg {
+        max-width: 1774px;
+        background: var(--fc-light-gray);
+        border-radius: 40px;
+        padding: 54px 40px 54px 40px;
+    }
+}
 
 @media(min-width:992px) {
-    /* .residentialbg {
-        padding: 24px 136px;
-    } */
+    .residentialbg {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 
     .borderbottom4 {
         border-bottom: none;
@@ -609,44 +649,50 @@
 
     .border-right3 {
         border-right: none;
-    }
-
-    .absolute1 {
-        position: absolute;
-        top: 120%;
-        left: 0;
-    }
-
-    .absolute2 {
-        position: absolute;
-        top: 120%;
 
     }
-
-    .absolute3 {
-        position: absolute;
-        top: 120%;
-        right: 0;
-    }
-
 }
 
 @media(min-width:1200px) {
-    .residenceimage {
-        transform: translateY(-30%);
+    .residentialbg {
+        max-width: 1774px;
+        background: var(--fc-light-gray);
+        border-radius: 40px;
+        padding: 40px 136px 40px 136px;
+        position: absolute;
+        right: 0;
+        left: 10%;
+        top: 95%;
+        z-index: -1;
     }
 
-    .backimage {
-        top: 65%;
+    .restorationbg {
+        max-width: 1774px;
+        background: var(--fc-light-gray);
+        border-radius: 40px;
+        padding: 40px 136px 40px 136px;
+        position: absolute;
+        left: 0;
+        top: 55%;
+        z-index: -1;
+    }
+
+    .residenceimage {
+        transform: translateY(-45%);
     }
 }
 
 @media(min-width:1400px) {
+    .residentialbg {
+        padding: 15px 136px 0 136px;
+        margin-top: 210px;
+    }
+
     .residenceimage {
-        transform: translateY(-25%);
+        transform: translateY(-45%);
     }
 
     .backimage {
-        top: 60%;
+        top: 35%;
     }
 }

@@ -54,9 +54,25 @@
     .welcome {
         --fs-lg: 48px;
     }
+
+    .number {
+        --fs-lg: 64px;
+    }
+
+    .Residentialtext {
+        --fs-xsm: 18px;
+    }
+
+    .Residential {
+        --fs-mmd: 38px;
+    }
 }
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+        .Residential {
+                --fs-mmd: 48px;
+            }
+}
 
 @media(min-width:992px) {}
 
