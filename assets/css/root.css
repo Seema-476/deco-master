@@ -24,9 +24,18 @@
     --fc-primary-purple: #8a3e74;
     --fc-secondary-purple: #9104E5;
     --fc-blue: #010080;
+    --fc-dark-blue: #0404a7;
 }
 
 @media(min-width:576px) {
+    .mail {
+        --fs-sm: 24px;
+    }
+
+    .NEWSLETTER {
+        --fs-lg: 75px;
+    }
+
     .digital {
         --fs-xxsm: 18px;
     }
@@ -69,12 +78,20 @@
 }
 
 @media(min-width:768px) {
-        .Residential {
-                --fs-mmd: 48px;
-            }
+    .Residential {
+        --fs-mmd: 48px;
+    }
+
+    .NEWSLETTER {
+        --fs-lg: 105px;
+    }
 }
 
-@media(min-width:992px) {}
+@media(min-width:992px) {
+    .NEWSLETTER {
+        --fs-lg: 144px;
+    }
+}
 
 @media(min-width:1200px) {
     .request {
