@@ -13,6 +13,8 @@
     /* font-color */
     --fc-white: #ffffff;
     --fc-black: #000000;
+    --fc-primary-black: #00000099;
+    --fc-red: #f4241e;
     --fc-gray: #4d4d4d;
     --fc-regular-gray: #dcdcdc;
     --fc-light-gray: #eeeeee;
@@ -28,6 +30,14 @@
 }
 
 @media(min-width:576px) {
+    .promise {
+        --fs-mmd: 36px;
+    }
+
+    .promisetext {
+        --fs-xxsm: 18px;
+    }
+
     .mail {
         --fs-sm: 24px;
     }
@@ -78,6 +88,10 @@
 }
 
 @media(min-width:768px) {
+    .loremcontent {
+        --fs-xxsm: 16px;
+    }
+
     .Residential {
         --fs-mmd: 48px;
     }
@@ -88,6 +102,10 @@
 }
 
 @media(min-width:992px) {
+    .loremcontent {
+        --fs-xxsm: 18px;
+    }
+
     .NEWSLETTER {
         --fs-lg: 144px;
     }
