@@ -570,7 +570,7 @@
 .team {
     color: var(--fc-white);
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: var(--fs-llg);
     font-weight: 700;
     line-height: 72px;
     text-align: center;
@@ -581,7 +581,7 @@
 .teamlead {
     color: var(--fc-white);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-sm);
     font-weight: 500;
     line-height: 27px;
     text-align: center;
@@ -591,14 +591,10 @@
 .woods {
     color: var(--fc-white);
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: var(--fs-mmd);
     font-weight: 700;
     line-height: 36px;
     text-align: center;
-}
-
-.ax-w-423 {
-    max-width: 423px;
 }
 
 .ourteamrightcolor {
@@ -612,7 +608,7 @@
 .text {
     color: var(--fc-black);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 27px;
     text-align: center;
@@ -624,7 +620,7 @@
 .moreno {
     color: var(--fc-black);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-sm);
     font-weight: 700;
     line-height: 27px;
     text-align: center;
@@ -686,7 +682,7 @@
 .Subscribebtn {
     color: var(--fc-white);
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-md);
     font-weight: 500;
     line-height: 30px;
     border: none;
