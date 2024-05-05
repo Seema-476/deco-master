@@ -46,12 +46,8 @@
         --fs-lg: 75px;
     }
 
-    .digital {
-        --fs-xxsm: 18px;
-    }
-
     .deconstrution {
-        --fs-mmd: 36px;
+        --fs-mmd: 30px;
     }
 
     .choose {
@@ -115,4 +111,13 @@
     .request {
         --fs-md: 24px;
     }
+}
+@media(min-width:1400px){
+    .digital {
+            --fs-xxsm: 18px;
+        }
+    
+        .deconstrution {
+            --fs-mmd: 36px;
+        }
 }

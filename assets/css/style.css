@@ -898,8 +898,8 @@
     }
 
     .gradientborder {
-        padding-top: 57px;
-        padding-bottom: 57px;
+        padding-top: 38px;
+        padding-bottom: 38px;
     }
 
     .finishes {
@@ -1122,6 +1122,11 @@
 }
 
 @media(min-width:1400px) {
+    .gradientborder {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
     .residentialbg {
         top: 41%;
         left: 8%;
