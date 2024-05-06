@@ -23,28 +23,28 @@
         <nav class="navbg">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div>
+                    <div class="blank">
                         <img src="./assets/images/navimage.png" alt="nav">
                     </div>
-                    <div class="menuicon">
+                    <div class="menuicon" onclick="opennav()">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <ul class="ps-0 mb-0 gap-5 d-flex menulist">
-                        <li><a class="home" href="">Home</a></li>
-                        <li><a class="home" href="">Overview</a></li>
-                        <li><a class="home" href="">Why Choose Us?</a></li>
-                        <li><a class="home" href="">Our Plans</a></li>
-                        <li><a class="home" href="">How It Works</a></li>
-                        <li><a class="home" href="">FAQs</a></li>
+                    <ul class="ps-0 mb-0 gap-5 d-flex menulist" id="navlist">
+                        <li><a class="home" onclick="opennav()" href="#Home">Home</a></li>
+                        <li><a class="home" onclick="opennav()" href="#Overview">Overview</a></li>
+                        <li><a class="home" onclick="opennav()" href="#ChooseUs">Why Choose Us?</a></li>
+                        <li><a class="home" onclick="opennav()" href="#OurPlans">Our Plans</a></li>
+                        <li><a class="home" onclick="opennav()" href="#HowItWorks">How It Works</a></li>
+                        <li><a class="home" onclick="opennav()" href="#FAQs">FAQs</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="bgimage flex-grow-1 d-flex align-items-center">
             <div class="container">
-                <div>
+                <div class="blank">
                     <p class="splash mb-0">Splash Your Dream Color</p>
                     <h1 class="heading1 mb-0">Bring Your Home To Lively Colors</h1>
                     <button class="colourbtn gradient-text">Colour Me</button>
@@ -53,7 +53,7 @@
         </div>
     </header>
     <!-- Why Choose Us? -->
-    <section class="py115 position-relative">
+    <section class="py115 position-relative" id="ChooseUs">
         <div class="container">
             <h2 class="choose mb-0">Why Choose Us?</h2>
             <div class="d-flex gap-1 justify-content-center pb42">
@@ -101,370 +101,298 @@
         </div>
     </section>
     <!-- Gallery -->
-    <section>
-        <h2 class="choose mb-0">Gallery</h2>
-        <div class="d-flex gap-1 justify-content-center pb42">
-            <p class="circle1 mb-0"></p>
-            <p class="circle2 mb-0"></p>
-            <p class="circle3 mb-0"></p>
-        </div>
-        <div class="slider-list responsive">
-            <div class="slider-image position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage1.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0">DECONSTRUCTION</p>
-                            <p class="digital mb-0">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+    <section id="Overview">
+        <div class="container max-w1920">
+            <h2 class="choose mb-0">Gallery</h2>
+            <div class="d-flex gap-1 justify-content-center pb42">
+                <p class="circle1 mb-0"></p>
+                <p class="circle2 mb-0"></p>
+                <p class="circle3 mb-0"></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage1.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-image position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage2.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0">DECONSTRUCTION</p>
-                            <p class="digital mb-0">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage2.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-image position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage3.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0">DECONSTRUCTION</p>
-                            <p class="digital mb-0">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
-                                            <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-image position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage4.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0">DECONSTRUCTION</p>
-                            <p class="digital mb-0">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage3.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-image position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage1.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0">DECONSTRUCTION</p>
-                            <p class="digital mb-0">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
-                                            <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="slider-list2 responsive2">
-            <div class="slider-image2 position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage5.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0 z-2">DECONSTRUCTION</p>
-                            <p class="digital mb-0 z-2">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage4.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-image2 position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage6.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0 z-2">DECONSTRUCTION</p>
-                            <p class="digital mb-0 z-2">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage5.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-image2 position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage7.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0 z-2">DECONSTRUCTION</p>
-                            <p class="digital mb-0 z-2">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
-                                            <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-image2 position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage8.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0 z-2">DECONSTRUCTION</p>
-                            <p class="digital mb-0 z-2">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
-                                </div>
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage6.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-image2 position-relative">
-                <div class="furniture">
-                    <img src="./assets/images/galleryimage1.png" alt="gallery" class="w-100 h-100">
-                    <div class="digitalbg absolutebg">
-                        <div class="gradientborder">
-                            <p class="deconstrution mb-0 z-2">DECONSTRUCTION</p>
-                            <p class="digital mb-0 z-2">Digital Paint, Painting, Realism</p>
-                            <div class="d-flex gap-3">
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
-                                            fill="black" />
-                                    </svg>
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage7.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="plusbg z-2 d-flex align-items-center justify-content-center">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_34717_10151)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 px-0 position-relative">
+                    <div class="furniture h-100">
+                        <img src="./assets/images/galleryimage8.png" alt="gallery" class="w-100 h-100">
+                        <div class="digitalbg absolutebg">
+                            <div class="gradientborder">
+                                <p class="deconstrution mb-0">DECONSTRUCTION</p>
+                                <p class="digital mb-0">Digital Paint, Painting, Realism</p>
+                                <div class="d-flex gap-3">
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
-                                                stroke="black" stroke-width="1.58333" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+                                                d="M9.19709 6.31191H6.32609V9.24891H3.65309V6.31191H0.782094V3.78741H3.65309V0.833906H6.32609V3.78741H9.19709V6.31191Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <div class="plusbg d-flex align-items-center justify-content-center curser">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_34717_10151)">
+                                                <path
+                                                    d="M7.95077 5.73984C7.5127 5.30488 6.91866 5.06055 6.29926 5.06055C5.67987 5.06055 5.08582 5.30488 4.64775 5.73984L2.99571 7.38027C2.55763 7.8154 2.31152 8.40558 2.31152 9.02096C2.31152 9.63634 2.55763 10.2265 2.99571 10.6617C3.43379 11.0968 4.02795 11.3413 4.64749 11.3413C5.26702 11.3413 5.86118 11.0968 6.29926 10.6617L7.12502 9.84144"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M6.29883 7.38072C6.7369 7.81567 7.33094 8.06001 7.95034 8.06001C8.56973 8.06001 9.16377 7.81567 9.60184 7.38072L11.2539 5.74029C11.692 5.30515 11.9381 4.71497 11.9381 4.09959C11.9381 3.48421 11.692 2.89403 11.2539 2.4589C10.8158 2.02376 10.2216 1.7793 9.60211 1.7793C8.98257 1.7793 8.38841 2.02376 7.95034 2.4589L7.12458 3.27911"
+                                                    stroke="black" stroke-width="1.58333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -474,11 +402,11 @@
         </div>
     </section>
     <!-- welcome -->
-    <section class="py115 position-relative">
+    <section class="py115 position-relative" id="OurPlans">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-12 d-flex align-items-center">
-                    <div>
+                    <div class="blank">
                         <p class="welcome mb-0">Welcome</p>
                         <p class="para mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard
@@ -527,7 +455,7 @@
         </div>
     </section>
     <!-- Our Process -->
-    <section class="position-relative">
+    <section class="position-relative" id="HowItWorks">
         <div class="container max-w-1880">
             <h2 class="choose mb-0 pb-4 text-center">Our Process</h2>
             <div class="d-flex gap-1 justify-content-center pb42">
@@ -613,8 +541,8 @@
         </div>
     </section>
     <!-- Our Services -->
-    <section class="position-relative py115">
-        <div class="residentialcolor d-sm-block d-none">
+    <section class="position-relative py115 mb-5 mb-sm-0">
+        <div class="residentialcolor d-md-block d-none">
             <img src="./assets/images/residentialcolor.png" alt="color">
         </div>
         <h2 class="choose mb-0">Our Services</h2>
@@ -628,10 +556,10 @@
             <div class="row flex-lg-row flex-column-reverse paddingtop paddingleft">
                 <div class="col-lg-7 col-12 d-flex align-items-center">
                     <div class="d-flex">
-                        <div>
+                        <div class="blank">
                             <p class="number mb-0">01 .</p>
                         </div>
-                        <div>
+                        <div class="blank">
                             <p class="Residential mb-0">Residential Projects</p>
                             <p class="Residentialtext mb-0">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -646,7 +574,7 @@
         </div>
     </section>
     <section class="position-relative margintop">
-        <div class="restorationcolor">
+        <div class="restorationcolor d-lg-block d-none">
             <img src="./assets/images/restorationcolor.png" alt="color">
         </div>
         <div class="restorationbg"></div>
@@ -657,10 +585,10 @@
                 </div>
                 <div class="col-lg-7 col-12 d-flex align-items-center">
                     <div class="d-flex">
-                        <div>
+                        <div class="blank">
                             <p class="number mb-0">02 .</p>
                         </div>
-                        <div>
+                        <div class="blank">
                             <p class="Residential mb-0">Restoration Projects</p>
                             <p class="Residentialtext mb-0">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -680,10 +608,10 @@
             <div class="row flex-lg-row flex-column-reverse paddingtop1 paddingleft">
                 <div class="col-lg-7 col-12 d-flex align-items-center">
                     <div class="d-flex">
-                        <div>
+                        <div class="blank">
                             <p class="number mb-0">03 .</p>
                         </div>
-                        <div>
+                        <div class="blank">
                             <p class="Residential mb-0">Commercial Projects</p>
                             <p class="Residentialtext mb-0">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -698,7 +626,7 @@
         </div>
     </section>
     <!-- Inspitations-->
-    <section class="pbt250 position-relative">
+    <section class="pbt250 position-relative" id="FAQs">
         <div class="inspitationsleftcolor d-sm-block d-none">
             <img src="./assets/images/inspitationsleftcolor.png" alt="left">
         </div>
@@ -756,24 +684,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="gridbox">
-                <div class="griditem1">
-                    <img src="./assets/images/grid1.png" alt="grid" class="w-100">
-                </div>
-                <div class="griditem2">
-                    <img src="./assets/images/grid2.png" alt="grid" class="w-100">
-                </div>
-                <div class="griditem3">
-                    <img src="./assets/images/grid3.png" alt="grid" class="w-100">
-                </div>
-                <div class="griditem4">
-                    <img src="./assets/images/grid4.png" alt="grid" class="w-100">
-
-        </div>
-        <div class="griditem5">
-            <img src="./assets/images/grid5.png" alt="grid" class="w-100">
-        </div>
-        </div> -->
         </div>
     </section>
     <!-- Our Team -->
@@ -783,31 +693,31 @@
         </div>
         <div class="container">
             <p class="team mb-0">Our Team</p>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/images/ourteam1.png" alt="team" class="w-100">
-                    <p class="teamlead mb-0">Team Lead</p>
-                    <p class="woods mb-0 pb-4 pb-sm-0">Frank Woods</p>
+            <div class="row rowtb">
+                <div class="col-md-6 col-12 position-relative d-flex justify-content-xxl-start justify-content-center">
+                    <div class="blank">
+                        <img src="./assets/images/ourteam1.png" alt="team" class="w-100 max-423">
+                        <p class="teamlead mb-0 pe-xxl-4">Team Lead</p>
+                        <p class="woods mb-0 pb-4 pb-sm-0 pe-xxl-4">Frank Woods</p>
+                        <div class="imageabsolute mt-xxl-0 mt-4">
+                            <img src="./assets/images/ourteam3.png" alt="team" class="w-100 max-423 zindex">
+                            <p class="teamlead mb-0">Manager</p>
+                            <p class="woods mb-0 pb-4 pb-lg-0">John William</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 d-lg-block d-none"></div>
-                <div class="col-lg-4 col-sm-6 col-12 imagetranslate3">
-                    <img src="./assets/images/ourteam2.png" alt="team" class="w-100">
-                    <p class="teamlead mb-0">Accounts</p>
-                    <p class="woods mb-0 pb-4 pb-sm-0">Michale John</p>
+                <div class="col-md-6 col-12 position-relative d-flex justify-content-xxl-start justify-content-center">
+                    <div class="blank">
+                        <img src="./assets/images/ourteam2.png" alt="team" class="w-100 max-423">
+                        <p class="teamlead mb-0 pr85">Accounts</p>
+                        <p class="woods mb-0 pb-4 pb-sm-0 pr135">Michale John</p>
+                        <div class="imageabsolute2 mt-xxl-0 mt-4">
+                            <img src="./assets/images/ourteam4.png" alt="team" class="w-100 max-423">
+                            <p class="teamlead mb-0">CEO</p>
+                            <p class="woods mb-0 pb-4 pb-lg-0">Thomas Arthur</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 d-lg-block d-none"></div>
-                <div class="col-lg-4 col-sm-6 col-12 imagetranslate1 mt-lg-0 mt-sm-4">
-                    <img src="./assets/images/ourteam3.png" alt="team" class="w-100">
-                    <p class="teamlead mb-0">Manager</p>
-                    <p class="woods mb-0 pb-4 pb-lg-0">John William</p>
-                </div>
-                <div class="col-1 d-lg-block d-none"></div>
-                <div class="col-lg-4 col-sm-6 col-12 imagetranslate2 mt-lg-0 mt-sm-4">
-                    <img src="./assets/images/ourteam4.png" alt="team" class="w-100">
-                    <p class="teamlead mb-0">CEO</p>
-                    <p class="woods mb-0 pb-4 pb-lg-0">Thomas Arthur</p>
-                </div>
-                <div class="col-3 d-lg-block d-none"></div>
             </div>
         </div>
     </section>
@@ -851,7 +761,7 @@
             </div>
         </div>
     </section>
-    <section class="py115 position-relative">
+    <section class="py115 position-relative mb-5">
         <div class="newsletterleftcolor">
             <img src="./assets/images/newsletterleftcolor.png" alt="news">
         </div>
@@ -860,7 +770,7 @@
         </div>
         <div class="container position-relative">
             <div class="mailbg"></div>
-            <div>
+            <div class="blank">
                 <p class="NEWSLETTER mb-0">NEWSLETTER</p>
                 <div class="mx-auto pb 140 max-w-914 gap-3 justify-content-center news text-center">
                     <input type="text" placeholder="Enter Your E-Mail Here" class="mail w-100">
@@ -914,7 +824,7 @@
                 </div>
                 <div class="col-xl-6 col-12 mt-xl-0 mt-3">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-6">
                             <ul class="mb-0 ps-0">
                                 <li class="py-4"><a class="footerhome" href="">Home</a></li>
                                 <li class="pb-2"><a class="link" href="">LINK1</a></li>
@@ -924,8 +834,7 @@
                                 <li class="pb-2"><a class="link" href="">LINK5</a></li>
                             </ul>
                         </div>
-                        <div
-                            class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-md-center justify-content-start">
+                        <div class="col-lg-3 col-6 d-flex justify-content-center">
                             <ul class="mb-0 ps-0">
                                 <li class="py-4"><a class="footerhome" href="">About us</a></li>
                                 <li class="pb-2"><a class="link" href="">LINK1</a></li>
@@ -935,8 +844,7 @@
                                 <li class="pb-2"><a class="link" href="">LINK5</a></li>
                             </ul>
                         </div>
-                        <div
-                            class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-lg-center justify-content-md-end justify-content-start">
+                        <div class="col-lg-3 col-6 d-flex justify-content-lg-center justify-content-start">
                             <ul class="mb-0 ps-0">
                                 <li class="py-4"><a class="footerhome" href="">Contact us</a></li>
                                 <li class="pb-2"><a class="link" href="">LINK1</a></li>
@@ -946,8 +854,7 @@
                                 <li class="pb-2"><a class="link" href="">LINK5</a></li>
                             </ul>
                         </div>
-                        <div
-                            class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-lg-end justify-content-start">
+                        <div class="col-lg-3 col-6 d-flex justify-content-lg-end justify-content-center">
                             <ul class="mb-0 ps-0">
                                 <li class="py-4"><a class="footerhome" href="">Portfolio</a></li>
                                 <li class="pb-2"><a class="link" href="">LINK1</a></li>
@@ -961,7 +868,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="blank">
             <p class="copyright mb-0">Copyright © Deco Master , 2021.</p>
         </div>
         <div class="topBtn d-flex align-items-center justify-content-center">
@@ -974,8 +881,6 @@
         </div>
     </footer>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -987,5 +892,4 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

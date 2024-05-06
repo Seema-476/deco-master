@@ -95,9 +95,17 @@
     .NEWSLETTER {
         --fs-lg: 105px;
     }
+
+    .deconstrution {
+        --fs-mmd: 36px;
+    }
 }
 
 @media(min-width:992px) {
+    .deconstrution {
+        --fs-mmd: 22px;
+    }
+
     .loremcontent {
         --fs-xxsm: 18px;
     }
@@ -108,16 +116,25 @@
 }
 
 @media(min-width:1200px) {
+    .deconstrution {
+        --fs-mmd: 29px;
+    }
+
+    .woods {
+        --fs-md: 24px;
+    }
+
     .request {
         --fs-md: 24px;
     }
 }
-@media(min-width:1400px){
+
+@media(min-width:1400px) {
     .digital {
-            --fs-xxsm: 18px;
-        }
-    
-        .deconstrution {
-            --fs-mmd: 36px;
-        }
+        --fs-xxsm: 18px;
+    }
+
+    .deconstrution {
+        --fs-mmd: 36px;
+    }
 }

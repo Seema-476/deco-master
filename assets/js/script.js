@@ -1,11 +1,9 @@
-const menuicon = document.querySelector(".menuicon");
-const menulist = document.querySelector(".menulist");
 
-menuicon.addEventListener("click", function () {
-    menulist.classList.toggle("show")
-    document.body.classList.toggle("overflowhidden")
+function opennav() {
+    document.getElementById("navlist").classList.toggle("start-0");
     document.querySelector(".menuicon").classList.toggle("cross");
-})
+    document.body.classList.toggle("overflowhidden")
+}
 const topBtn = document.querySelector(".topBtn")
 
 window.addEventListener("scroll", function () {
